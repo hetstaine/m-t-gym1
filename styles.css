@@ -45,7 +45,9 @@ header {
 
 header .logo img {
   display: block;
-  max-height: 150px; /* enlarged logo */
+  height: auto;      /* let it scale naturally */
+  max-height: 150px; /* cap at reasonable size */
+  width: auto;       /* maintain aspect ratio */
 }
 
 header nav ul {
