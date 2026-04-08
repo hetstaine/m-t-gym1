@@ -1,180 +1,219 @@
 /* ================== Google Fonts ================== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 /* ================== GLOBAL STYLES ================== */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: #f8f9fa;
+  background-color: #f9f9f9;
   color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin: 0.5em 0;
 }
 
+p {
+  line-height: 1.6;
+  margin: 0.5em 0 1em 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ================== HEADER ================== */
 header {
-  background-color: #fff;
-  padding: 20px 40px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
-header nav a {
-  margin-left: 20px;
-  font-weight: 700;
-  color: #ff4d4d;
+header .logo {
+  height: 50px;
 }
 
-header nav a:hover {
-  color: #ff6633;
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+header nav li a {
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+header nav li a:hover {
+  color: #ff4500;
 }
 
 /* ================== HERO ================== */
 .hero {
   position: relative;
-  background: url('assets/images/hero.jpg') center/cover no-repeat;
-  height: 80vh;
+  width: 100%;
+  height: 70vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  color: #fff;
+  align-items: center;
+  overflow: hidden;
 }
 
-.hero::before {
-  content: "";
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+  top: 0;
+  left: 0;
 }
 
 .hero-text {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.hero a {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #ff4d4d;
+  position: absolute;
   color: #fff;
-  font-weight: 700;
-  border-radius: 5px;
+  text-align: center;
+  padding: 0 20px;
 }
 
-.hero a:hover {
-  background-color: #ff6633;
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+
+.hero-text .btn {
+  background-color: #ff4500;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.hero-text .btn:hover {
+  background-color: #e03e00;
 }
 
 /* ================== INTRO ================== */
 .intro {
-  padding: 60px 40px;
+  padding: 60px 20px;
   text-align: center;
-}
-
-.intro h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.intro p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 /* ================== FEATURED TRAINERS ================== */
 .featured-trainers {
-  padding: 60px 40px;
-  background-color: #fff;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.featured-trainers h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.trainers-grid {
+.trainer-grid {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .trainer-card {
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 280px;
-  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .trainer-card img {
   width: 100%;
-  height: 280px;
+  height: 200px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .trainer-card h3 {
-  margin: 15px 0 10px;
-  color: #ff4d4d;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .trainer-card p {
-  padding: 0 15px 15px;
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1rem;
+  color: #666;
 }
 
-/* ================== FEATURES ================== */
-.features {
-  padding: 60px 40px;
-  background-color: #f9f9f9;
+/* ================== COACHES PAGE ================== */
+.coach-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.coach-card {
+  background-color: #fff;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
   text-align: center;
 }
 
-.features h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+.coach-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
+.coach-card h3 {
+  margin: 15px 0 5px 0;
+}
+
+.coach-card p {
+  padding: 0 15px 15px 15px;
+  color: #666;
+}
+
+/* ================== FEATURES PAGE ================== */
 .features-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  padding: 60px 20px;
 }
 
 .feature-card {
   background-color: #fff;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
-  width: 280px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .feature-card img {
@@ -184,91 +223,109 @@ header nav a:hover {
 }
 
 .feature-card h3 {
-  margin: 15px 0 10px;
-  color: #ff4d4d;
+  margin: 15px 0 5px 0;
 }
 
 .feature-card p {
-  padding: 0 15px 15px;
-  font-size: 0.95rem;
-  color: #555;
+  padding: 0 15px 15px 15px;
+  color: #666;
 }
 
-/* ================== ABOUT ================== */
-.about, .contact {
-  padding: 60px 40px;
+/* ================== ABOUT PAGE ================== */
+.about-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.about h2, .contact h2 {
-  font-size: 2.5rem;
+.about-section h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.about p, .contact p {
+.about-section p {
   font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
+  color: #555;
 }
 
-/* ================== CONTACT FORM ================== */
-.contact form {
-  max-width: 500px;
+/* ================== CONTACT PAGE ================== */
+.contact-section {
+  padding: 60px 20px;
+  max-width: 900px;
   margin: 0 auto;
-  text-align: left;
 }
 
-.contact form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 700;
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.contact form input,
-.contact form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.contact form button {
-  background-color: #ff4d4d;
+.contact-section button {
+  background-color: #ff4500;
   color: #fff;
+  font-weight: 600;
+  padding: 15px;
   border: none;
-  padding: 12px 30px;
-  font-weight: 700;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.contact form button:hover {
-  background-color: #ff6633;
+.contact-section button:hover {
+  background-color: #e03e00;
 }
 
 /* ================== FOOTER ================== */
 footer {
-  text-align: center;
-  padding: 20px 40px;
   background-color: #fff;
-  color: #888;
+  text-align: center;
+  padding: 20px;
   border-top: 1px solid #eee;
+  color: #666;
 }
 
 /* ================== RESPONSIVE ================== */
-@media (max-width: 900px) {
-  .trainers-grid, .features-grid {
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .trainer-grid,
+  .coach-grid,
+  .features-grid {
     flex-direction: column;
     align-items: center;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
+  .trainer-card,
+  .coach-card,
+  .feature-card {
+    width: 90%;
   }
 
-  .hero p {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
     font-size: 1rem;
   }
 }
