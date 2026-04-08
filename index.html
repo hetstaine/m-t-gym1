@@ -3,90 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="title">Chic Happens - Fashion Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Gym and Tonic</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-
-<header class="navbar">
-  <div class="container">
-    <a href="index.html" class="logo">
-  <img src="assets/images/logo.png" alt="Chic Happens Logo">
-    </a>
+  <header>
+    <img src="assets/images/logo.png" alt="Gym and Tonic Logo" class="logo">
     <nav>
       <ul>
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="collections.html" data-i18n="nav.collections">Collections</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="index.html" data-i18n="home">Home</a></li>
+        <li><a href="coaches.html" data-i18n="coaches">Coaches</a></li>
+        <li><a href="features.html" data-i18n="features">Features</a></li>
+        <li><a href="about.html" data-i18n="about">About</a></li>
+        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
       </ul>
     </nav>
-    <select id="langSwitcher">
-      <option value="en">EN</option>
-      <option value="uk">UK</option>
-    </select>
-  </div>
-</header>
+  </header>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="image-tooltip-container">
-    <img src="assets/images/en/hero.jpg" data-i18n-img="hero.img" alt="Feel the Summer Breeze" alt-key="hero.title">
-    <div class="tooltip-text" data-i18n="hero.title">Feel the Summer Breeze</div>
-  </div>
-  <div class="hero-text">
-    <h1 data-i18n="hero.title">Feel the Summer Breeze</h1>
-    <p data-i18n="hero.subtitle">Catch the latest trends before they vanish like sand through your fingers</p>
-    <a href="collections.html" class="cta-btn" data-i18n="hero.cta">Explore Collection</a>
-  </div>
-</section>
-
-<!-- Featured Products -->
-<section class="featured">
-  <h2 data-i18n="home.featured">Featured Collections</h2>
-
-  <div class="product-grid">
-    
-    <div class="product-card">
-      <div class="image-tooltip-container">
-        <img 
-          src="assets/images/en/product1.jpg"
-          data-i18n-img="product1.img"
-          alt="Sunset Dress"
-          alt-key="product1.name"
-        >
-        <div class="tooltip-text" data-i18n="product1.name">
-          Sunset Dress
-        </div>
-      </div>
-
-      <h3 data-i18n="product1.name">Sunset Dress</h3>
-
-      <p data-i18n="product1.desc">
-        Turn heads with this dazzling dress — perfect for the beach or a night out
-      </p>
-
-      <p class="price" data-i18n="product1.price">$120</p>
-
-      <p class="sizes" data-i18n="product1.sizes">
-        Sizes: S, M, L, XL
-      </p>
+  <section class="hero">
+    <img src="assets/images/hero.jpg" alt="Gym Hero Image">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <h1 data-i18n="hero_title">Train Hard, Feel Great</h1>
+      <p data-i18n="hero_subtitle">Join Gym and Tonic and transform your fitness journey</p>
+      <a href="coaches.html" class="btn" data-i18n="hero_button">Meet Our Coaches</a>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section class="intro">
+    <h2 data-i18n="intro_title">Your Fitness, Our Passion</h2>
+    <p data-i18n="intro_text">From weightlifting to yoga, our expert trainers guide you every step of the way. Whether you want to tone up, build strength, or improve flexibility, Gym and Tonic has a plan for you.</p>
+  </section>
 
-<!-- Newsletter -->
-<section class="newsletter">
-  <h2 data-i18n="newsletter.title">Stay in the Loop</h2>
-  <p data-i18n="newsletter.subtitle">Sign up for exclusive drops and insider tips — don’t miss the boat!</p>
-  <form>
-    <input type="email" placeholder="Your email">
-    <button type="submit" data-i18n="newsletter.cta">Subscribe</button>
-  </form>
-</section>
+  <!-- Featured Trainers Section -->
+  <section class="featured-trainers">
+    <h2 data-i18n="featured_trainers_title">Featured Trainers</h2>
+    <div class="trainer-grid">
+      <div class="trainer-card">
+        <img src="assets/images/gym1.jpg" alt="John Strong">
+        <h3 data-i18n="coach1_name">John Strong</h3>
+        <p data-i18n="coach1_desc">Master of iron and grit, John will push your limits with weights while keeping a smile on your face. Price: $50/session.</p>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/images/gym2.jpg" alt="Lisa Swift">
+        <h3 data-i18n="coach2_name">Lisa Swift</h3>
+        <p data-i18n="coach2_desc">High-energy HIIT and cardio queen, Lisa makes you sweat while teaching you to fly. Price: $45/session.</p>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/images/gym3.jpg" alt="Maya Zen">
+        <h3 data-i18n="coach3_name">Maya Zen</h3>
+        <p data-i18n="coach3_desc">From downward dogs to backbends, Maya helps your body flow with ease and mindfulness. Price: $40/session.</p>
+      </div>
+    </div>
+  </section>
 
-<script src="app.js"></script>
+  <footer>
+    <p>&copy; 2026 Gym and Tonic</p>
+  </footer>
 </body>
 </html>
