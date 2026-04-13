@@ -43,11 +43,10 @@ header {
   z-index: 100;
 }
 
-header .logo img {
+header .logo {
+  height: 60px;
+  width: auto;
   display: block;
-  height: auto;      /* let it scale naturally */
-  max-height: 150px; /* cap at reasonable size */
-  width: auto;       /* maintain aspect ratio */
 }
 
 header nav ul {
