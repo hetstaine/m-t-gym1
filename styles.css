@@ -340,7 +340,7 @@ footer {
 /* ===== NEWSLETTER ===== */
 
 .newsletter {
-  background: #e6f2ff;
+  background: #e5f8ce;
   text-align: center;
   padding: 60px 20px;
 }
@@ -360,7 +360,7 @@ footer {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background: #007bff;
+  background: #84c03b;
   color: white;
   font-weight: bold;
   cursor: pointer;
