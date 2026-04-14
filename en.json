@@ -50,5 +50,11 @@
   "contact.follow": "Stay Connected",
   "contact.phoneLabel": "Phone",
 
-
+  "hero.img": "assets/images/en/hero.jpg",
+  "gym1.img": "assets/images/en/gym1.jpg",
+  "gym2.img": "assets/images/en/gym2.jpg",
+  "gym3.img": "assets/images/en/gym3.jpg",
+  "fitness_feature1.img": "assets/images/en/fitness_feature1.jpg",
+  "fitness_feature2.img": "assets/images/en/fitness_feature2.jpg",
+  "fitness_feature3.img": "assets/images/en/fitness_feature3.jpg"
 }
