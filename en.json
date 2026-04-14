@@ -40,10 +40,15 @@
   
   "contact_title": "Get in Touch",
   "contact_text": "Have questions or want to book a session? Fill out the form below, and our team will respond promptly.",
-  "form_name": "Name:",
-  "form_email": "Email:",
-  "form_message": "Message:",
-  "form_submit": "Send Message"
+  "contact.nameLabel": "Your Name",
+  "contact.emailLabel": "Email Address",
+  "contact.messageLabel": "Message",
+  "contact.cta": "Send Message",
+  "contact.name": "John Doe",
+  "contact.email": "you@example.com",
+  "contact.message": "Your message...",
+  "contact.follow": "Stay Connected",
+  "contact.phoneLabel": "Phone",
 
 
 }

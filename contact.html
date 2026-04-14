@@ -37,21 +37,24 @@
     <!-- Form -->
     <form class="contact-form" action="contact-handler.php" method="POST">
       <div class="form-group">
-        <label for="name" data-i18n="form_name">Name:</label>
-        <input id="name" name="name" type="text" required placeholder="John Doe" data-i18n-placeholder="form_name">
+        <label for="name" data-i18n="contact.nameLabel">Your Name</label>
+        <input id="name" name="name" type="text" required placeholder="John Doe"
+               data-i18n-placeholder="contact.name">
       </div>
 
       <div class="form-group">
-        <label for="email" data-i18n="form_email">Email:</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" data-i18n-placeholder="form_email">
+        <label for="email" data-i18n="contact.emailLabel">Email Address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com"
+               data-i18n-placeholder="contact.email">
       </div>
 
       <div class="form-group">
-        <label for="message" data-i18n="form_message">Message:</label>
-        <textarea id="message" name="message" rows="6" required placeholder="Your message..." data-i18n-placeholder="form_message"></textarea>
+        <label for="message" data-i18n="contact.messageLabel">Message</label>
+        <textarea id="message" name="message" rows="6" required
+                  placeholder="Your message..." data-i18n-placeholder="contact.message"></textarea>
       </div>
 
-      <button type="submit" class="btn-primary" data-i18n="form_submit">Send Message</button>
+      <button type="submit" class="btn-primary" data-i18n="contact.cta">Send Message</button>
     </form>
 
     <!-- Contact Info -->
