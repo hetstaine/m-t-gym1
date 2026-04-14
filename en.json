@@ -1,12 +1,16 @@
 {
+  "title": "Gym and Tonic",
+  
   "home": "Home",
   "coaches": "Coaches",
   "features": "Features",
   "about": "About",
   "contact": "Contact",
+
   "hero_title": "Train Hard, Feel Great",
   "hero_subtitle": "Join Gym and Tonic and transform your fitness journey",
   "hero_button": "Meet Our Coaches",
+
   "intro_title": "Your Fitness, Our Passion",
   "intro_text": "From weightlifting to yoga, our expert trainers guide you every step of the way. Whether you want to tone up, build strength, or improve flexibility, Gym and Tonic has a plan for you.",
   "featured_trainers_title": "Featured Trainers",
@@ -22,6 +26,7 @@
   "coach2_desc": "High-energy HIIT and cardio queen, Lisa makes you sweat while teaching you to fly. Price: $45/session.",
   "coach3_name": "Maya Zen",
   "coach3_desc": "From downward dogs to backbends, Maya helps your body flow with ease and mindfulness. Price: $40/session.",
+
   "features_title": "Gym Features",
   "feature1_name": "Free Weights Area",
   "feature1_desc": "Pump iron like a champ! From barbells to dumbbells, lift your spirits and your gains—no pain, no champagne.",
@@ -29,12 +34,16 @@
   "feature2_desc": "We tailor each rep and set to your body, turning sweat into gold. Remember: Rome wasn't built in a day, but you’ll feel stronger every session!",
   "feature3_name": "Nutrition Guidance",
   "feature3_desc": "Eat smart, lift smarter! Our nutrition tips ensure you don't just train hard, you fuel smart—because abs are made in the kitchen too.",
+
   "about_title": "About Gym and Tonic",
   "about_text": "Gym and Tonic is dedicated to helping you achieve your fitness goals. Our expert trainers, state-of-the-art facilities, and personalized programs make fitness fun, effective, and safe. Whether you’re a beginner or a seasoned athlete, we have something for everyone.",
+  
   "contact_title": "Get in Touch",
   "contact_text": "Have questions or want to book a session? Fill out the form below, and our team will respond promptly.",
   "form_name": "Name:",
   "form_email": "Email:",
   "form_message": "Message:",
   "form_submit": "Send Message"
+
+
 }
